@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.turbo/
+.DS_Store
+
+.env
+.env.*
+!env.example
+
+*.log
+
+# Local OpenDesign MCP launcher config
+.opendesign.mcp.local.json

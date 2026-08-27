@@ -1,0 +1,32 @@
+{
+  "name": "personality",
+  "version": "0.1.0",
+  "private": true,
+  "description": "PERSONALITY personal data and AI assistant monorepo",
+  "packageManager": "pnpm@10.15.0",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "typecheck": "turbo run typecheck",
+    "lint": "turbo run lint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "od:test": "tsx tools/opendesign/client.ts test",
+    "od:tools": "tsx tools/opendesign/client.ts tools",
+    "od:call": "tsx tools/opendesign/client.ts call"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.34.0",
+    "@modelcontextprotocol/client": "2.0.0",
+    "eslint": "^9.34.0",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.5",
+    "turbo": "^2.5.6",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.41.0"
+  }
+}
